@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Javascript Runs in me</title>
 </head>
+
 <body>
     <!-- 
         JAVASCRIPT STARTER:
         Use it by opening this file in a browser.
     -->
     <script>
-        // first alert the user hello world
-        alert("Hello world 123");
-        // then write it to the document
-        document.write("Hello world 456");    
+        var conditions = [
+            'true',
+            'false',
+            '!true',
+            '!false',
+            '!!true',
+            'true === true',
+            'true == 1',
+            'true === 1',
+            'false == 0',
+            'true != false',
+            'true !== false',
+            'true != 1',
+            'true !== 1',
+            '1 > 0',
+            '0 > 1',
+            '9001 > 9000',
+            'true > 0',
+            'false > true',
+            'true || false',
+            'false || true',
+            'false || false',
+            'true && true',
+            'false && false',
+            'true && false',
+            'false && true'
+        ];
+
+        var gameOver = false;
+        var evaluation = 'false';
+
+        // var answer = confirm(`Does\n"${evaluation}"\nevaluate to true?`);
+        // if (answer === eval(evaluation)) {
+            // alert("Nice!");
+        // } else {
+            // alert("Nope..");
+            // gameOver = true;
+        // }
+
+        function handleCondition(condition) {
+            console.log(eval(condition));
+
+            // return true if gameover
+
+            // return false to continue game (Default for now)
+            return false;
+        }
+
+        handleCondition("console.log('henk')");
+        conditions.some(handleCondition);
+
+        // if (gameOver) {
+        //     alert("You died..");
+        // } else {
+        //     alert("You win!!");
+        // }
+
+
+
+
+
+
+
+
+        // // first alert the user hello world
+        // alert("Hello world 123");
+        // // then write it to the document
+        // document.write("Hello world 456");    
     </script>
 </body>
+
 </html>
